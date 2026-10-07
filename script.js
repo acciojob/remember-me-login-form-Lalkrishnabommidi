@@ -1,9 +1,7 @@
-//your JS code here. If required.
 const form = document.querySelector("form");
 const username = document.getElementById("username");
 const password = document.getElementById("password");
 const checkbox = document.getElementById("checkbox");
-const submit = document.getElementById("submit");
 const existing = document.getElementById("existing");
 
 function showExistingUser() {
@@ -20,9 +18,7 @@ function showExistingUser() {
 form.addEventListener("submit", function(event) {
   event.preventDefault();
 
-  const name = username.value;
-
-  alert(`Logged in as ${name}`);
+  alert(`Logged in as ${username.value}`);
 
   if (checkbox.checked) {
     localStorage.setItem("username", username.value);
