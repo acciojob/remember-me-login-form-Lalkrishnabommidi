@@ -39,4 +39,5 @@ existing.addEventListener("click", function() {
   }
 });
 
+// Run immediately when the page loads
 showExistingUser();
